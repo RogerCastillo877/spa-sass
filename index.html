@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Lato:wght@400;700;900&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="build/css/app.css">
 </head>
 <body>
@@ -48,10 +49,16 @@
     </div>
   </div>
 
-  <section class="slider">
-    <ul class="slider__content">
-      <li class="slider__slide">
-        <img src="build/img/slide_03.jpg" alt="imagen slide">
+  <section class="swiper container">
+    <ul class="swiper-wrapper">
+      <li class="swiper-slide">
+        <img class="slider__image" src="build/img/slide_01.jpg" alt="imagen slide">
+      </li>
+      <li class="swiper-slide">
+        <img class="slider__image" src="build/img/slide_02.jpg" alt="imagen slide">
+      </li>
+      <li class="swiper-slide">
+        <img class="slider__image" src="build/img/slide_03.jpg" alt="imagen slide">
       </li>
     </ul>
   </section>
@@ -227,5 +234,7 @@
     </div>
     <p class="footer__copyright">Carolina Salon & Spa. Todos los derechos reservados</p>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
