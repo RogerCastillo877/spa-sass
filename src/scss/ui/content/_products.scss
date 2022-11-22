@@ -1,0 +1,53 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.products {
+  &__heading {
+    @include m.headingItalic;
+  }
+
+  &__grid {
+    @include m.grid(1, 2rem);
+
+    @include m.tablet { 
+      @include m.grid(2, 2rem);
+    }
+    @include m.desktop { 
+      @include m.grid(4, 2rem);   
+    }
+  }
+}
+
+.product {
+  &__content {
+    background-color: v.$blanco;
+    padding: 2rem;
+  }
+  &__mask {
+    overflow: hidden;
+  }
+  &__image {
+    width: 100%;
+    transition-property: scale;
+    transition-duration: 300ms;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+  &__name {
+    @include m.heading;
+    font-size: 2.4rem;
+    color: v.$secundario;
+  }
+  &__description {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    line-height: 1.8;
+  }
+  &__price {
+    text-align: center;
+    color: v.$gris;
+    font-size: 2.8rem;
+    margin: 0;
+  }
+}

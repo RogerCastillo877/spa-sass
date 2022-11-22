@@ -37,7 +37,7 @@
     transform: translateY(-5rem);
   }
   &__heading {
-    @include m.hedingItalic;
+    @include m.headingItalic;
     font-size: 3.4rem;
     padding: 2rem;
   }
